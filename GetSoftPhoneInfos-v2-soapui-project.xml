@@ -1,114 +1,1473 @@
-BU_FR=FR
-CPETYPE=SOFTPHONE
-ID_TYPE_NDIP=NDIP
-NDIP_Nominal=+33155886791
-NDIP_nominal_accountId=123440402
-NDIP_nominal_offer=Voipsoftphone
-NDIP_authEmail=nimisha.gupta@orange.com
-NDIP_connectionMode=NOMINAL
-IPAddress=10.239.199.1
-firstConnectionDate=2008-06-16T09:56:26.377Z
-deviceBrand=Samsung
-deviceName=GT-I9000
-os=G0R0C1
-osVersion=2.3.6
-softwareVersion=G0R0C1
-NDIP_serviceType=VOIP_SIP
-NDIP_interfaceName=VMPAL
-NDIP_interfaceValue=2
-NDIP_serviceStatus=200
-NDIP_parameter_name1=authentication
-NDIP_parameter_name2=IMPI
-NDIP_parameter_name3=NDIP
-NDIP_parameter_name4=URISIP
-NDIP_parameter_name5=OutboundProxy
-NDIP_parameter_name6=useDefaultOutboundProxyPort
-NDIP_parameter_name7=LocalPortNumber
-NDIP_parameter_name8=RegistrationDelay
-NDIP_parameter_name9=MWIEnable
-NDIP_parameter_name10=CallWaitingEnable
-NDIP_parameter_name11=International
-NDIP_parameter_name12=Mobile
-NDIP_parameter_name13=Premium
-NDIP_parameter_name14=UserAgentDomain
-NDIP_parameter_name15=VoiceMailBoxDomain
-NDIP_parameter_name16=UserName
-NDIP_parameter_name17=UserFirstName
-NDIP_parameter_name18=SiPUserAgent
-RC_OK=1
-RFM_OK=RESULT OK
-NDIP_parameter_value1=*****
-NDIP_parameter_value2=FTI/123440402
-NDIP_parameter_value3=+33123440402
-NDIP_parameter_value4=SIP:+33123440402@orange.com
-NDIP_parameter_value5=FTI/123440402
-NDIP_parameter_value6=FTI/123440402
-NDIP_parameter_value7=FTI/123440402
-NDIP_parameter_value8=FTI/123440402
-NDIP_parameter_value9=FALSE
-NDIP_parameter_value10=FALSE
-NDIP_parameter_value11=+33123440402
-NDIP_parameter_value12=+33123440402
-NDIP_parameter_value13=TRUE
-NDIP_parameter_value14=ad.francetelecom.fr
-NDIP_parameter_value15=ad.francetelecom.fr
-NDIP_parameter_value16=Nimisha Gupta
-NDIP_parameter_value17=Nimisha
-NDIP_parameter_value18=OrangeSoftVersion-055-L01-A40
-AID_nominal=123440401
-AID_nominal_OS=G0R0C0
-AID_nominal_softwareVersion=G0R0C0
-AID_nominal_InterfaceValue=1
-AID_parameter_value2=FTI/123440401
-AID_parameter_value3=+33123440401
-AID_parameter_value4=SIP:+33123440401@orange.com
-IMPI_nominal_accountID=123440403
-IMPI_nominal_os=G0R0C2
-IMPI_nominal_softwareVersion=G0R0C2
-IMPI_nominal_interfaceValue=3
-IMPI_parameter_value2=FTI/123440403
-IMPI_parameter_value3=+33123440403
-IMPI_parameter_value4=SIP:+33123440403@orange.com
-RC_InvalidReturnType=-104
-RFM_InvalidAID=Undefined FCPESoft error : Invalid AID
-RFM_InvalidNDIP=Undefined FCPESoft error : Invalid NDIP
-RFM_InvalidIMPI=Undefined FCPESoft error : Invalid IMPI
-RFM_InvalidBU=Undefined FCPESoft error : Invalid business unit
-RFM_InvalidCPE=Undefined FCPESoft error : Invalid CPEType
-RC_CustomerNotFound=-200
-RFM_CustomerNotFound=requested customer does not exist
-RC_FCPEUnreachable=-104
-RFM_FCPEUnreachable=Undefined FCPESoft error : Unknown error
-RC_InvalidIdType=-101
-RFM_Invalid_AID=Bad input data format : customerId (type:AID)
-RFM_Invalid_NDIP=Bad input data format : customerId (type:NDIP)
-RFM_Invalid_IMPI=Bad input data format : customerId (type:IMPI)
-AID_ServiceStatus0=123440480
-AID_authEmail=nimisha.gupta1@orange.com
-SrviceStatus0=0
-RC_MissingInput=-102
-RFM_MissingInput=Missing input parameter :  customerId
-RFM_MissingBU=Missing input parameter :  businessUnit
-RFM_MissingCPE=Missing input parameter :  cpeType
-ID_Type_AID=AID
-ID_Type_IMPI=IMPI
-Nominal_IMPI=a1243f@orange-multimedia.fr
-AID_104=123440404
-NDIP_104=123440405
-IMPI_104=123440406
-BU_104=123440407
-CPE_104=123440408
-AID_noCustomer=123440499
-Unknown_AID=123440409
-Unreachable_AID=123440409
-AID_101=1234404091222
-NDIP_101=1234404091222
-IMPI_101=nimisha.gupta@orange-multimedia.fr
-RC_BadFormat=-100
-RC_103=-103
-RFM_unreachable=FCPESoft unreachable
-notreachable_AID=123440482
-NDIP_100=18888888888888888888888888888
-IMPI_100=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-Port=7031
-Server=10.170.231.171
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="GetSoftPhoneInfos-v2" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="GetSoftPhoneInfosSoapBinding" type="wsdl" bindingName="{http://WSA.francetelecom.com/wsdl/GetSoftPhoneInfos/v2}GetSoftPhoneInfosSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Papyrus%20WS/WSDLs%20(2)/WSDLs/north/GetSoftPhoneInfos/v2/GetSoftPhoneInfos-v2.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Papyrus%20WS\WSDLs%20(2)\WSDLs\north\GetSoftPhoneInfos\v2\GetSoftPhoneInfos-v2.wsdl"><con:part><con:url>file:\C:\Papyrus%20WS\WSDLs%20(2)\WSDLs\north\GetSoftPhoneInfos\v2\GetSoftPhoneInfos-v2.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://WSA.francetelecom.com/wsdl/GetSoftPhoneInfos/v2" xmlns:types="http://WSA.francetelecom.com/types/GetSoftPhoneInfos" xmlns:intf="http://WSA.francetelecom.com/wsdl/GetSoftPhoneInfos/v2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <schema elementFormDefault="qualified" targetNamespace="http://WSA.francetelecom.com/wsdl/GetSoftPhoneInfos/v2" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import schemaLocation="GetSoftPhoneInfos.xsd" namespace="http://WSA.francetelecom.com/types/GetSoftPhoneInfos"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="getClientSOFTPHONEInfoRequest">
+    <wsdl:part element="types:getClientSOFTPHONEInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getClientSOFTPHONEInfoResponse">
+    <wsdl:part element="types:getClientSOFTPHONEInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="GetSoftPhoneInfos">
+    <wsdl:operation name="getClientSOFTPHONEInfo">
+      <wsdl:documentation>The getClientSOFTPHONEInfo operation allows to retrieve service and
+				softphone information from a customer identifier, from an IP phone
+				number or from a VOIP SIP login</wsdl:documentation>
+      <wsdl:input message="intf:getClientSOFTPHONEInfoRequest" name="getClientSOFTPHONEInfoRequest"/>
+      <wsdl:output message="intf:getClientSOFTPHONEInfoResponse" name="getClientSOFTPHONEInfoResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetSoftPhoneInfosSoapBinding" type="intf:GetSoftPhoneInfos">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getClientSOFTPHONEInfo">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getClientSOFTPHONEInfoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getClientSOFTPHONEInfoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetSoftPhoneInfosService">
+    <wsdl:documentation>The GetSoftPhoneInfos service provides information on devices managed by
+			the FCPEsoft platform</wsdl:documentation>
+    <wsdl:port binding="intf:GetSoftPhoneInfosSoapBinding" name="GetSoftPhoneInfos">
+      <wsdlsoap:address location="http://WSA.francetelecom.com/papyrusCustomerCareWS/services/GetSoftPhoneInfos-v2"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Papyrus%20WS\WSDLs%20(2)\WSDLs\north\GetSoftPhoneInfos\v2\GetSoftPhoneInfos.xsd</con:url><con:content><![CDATA[<schema elementFormDefault="qualified" targetNamespace="http://WSA.francetelecom.com/types/GetSoftPhoneInfos" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:types="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+  <element name="getClientSOFTPHONEInfo">
+    <complexType>
+      <sequence>
+        <element name="businessUnit" type="xsd:string"/>
+        <element name="cpeType" type="xsd:string"/>
+        <element name="customerId" type="types:CustomerIdV2"/>
+        <element name="callContext" minOccurs="0" type="types:CallContextV2"/>
+      </sequence>
+    </complexType>
+  </element>
+  <complexType name="CustomerIdV2">
+    <sequence>
+      <element name="type" minOccurs="0" type="xsd:string"/>
+      <element name="value" minOccurs="0" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="CallContextV2">
+    <sequence>
+      <element name="applicationParameter" minOccurs="0" type="xsd:string"/>
+      <element name="logLevel" minOccurs="0" type="xsd:string"/>
+      <element name="timing" minOccurs="0" type="xsd:string"/>
+      <element name="userName" minOccurs="0" type="xsd:string"/>
+      <element name="userPassword" minOccurs="0" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="ResponseContextV2">
+    <sequence>
+      <element name="returnCode" type="xsd:int"/>
+      <element name="returnFaultMessage" type="xsd:string"/>
+      <element name="responseTime" type="xsd:string"/>
+      <element name="applicationResponse" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <element name="getClientSOFTPHONEInfoResponse">
+    <complexType>
+      <sequence>
+        <element name="getClientSOFTPHONEInfoReturn" type="types:GetClientSOFTPHONEInfoBeanV2"/>
+      </sequence>
+    </complexType>
+  </element>
+  <complexType name="CustomerInfoV2">
+    <sequence>
+      <element name="accountId" type="xsd:string"/>
+      <element name="offer" type="xsd:string"/>
+      <xsd:element name="authEmail" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="EquipmentV2">
+    <sequence>
+      <element name="connectionMode" minOccurs="0" type="xsd:string"/>
+      <element name="ipAddress" minOccurs="0" type="xsd:string"/>
+      <element name="firstConnectiondate" minOccurs="0" type="xsd:dateTime"/>
+      <element name="lastConnectiondate" minOccurs="0" type="xsd:dateTime"/>
+      <element name="deviceBrand" minOccurs="0" type="xsd:string"/>
+      <element name="deviceName" minOccurs="0" type="xsd:string"/>
+      <element name="os" minOccurs="0" type="xsd:string"/>
+      <element name="osVersion" minOccurs="0" type="xsd:string"/>
+      <element name="softwareVersion" minOccurs="0" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="ServiceV2">
+    <sequence>
+      <element name="type" type="xsd:string"/>
+      <element name="interfaceStatusList" minOccurs="0" maxOccurs="unbounded" type="types:InterfaceStatusV2"/>
+      <element name="serviceStatus" minOccurs="0" type="int"/>
+      <element name="parameterList" minOccurs="0" maxOccurs="unbounded" type="types:ParametersV2"/>
+    </sequence>
+  </complexType>
+  <complexType name="InterfaceStatusV2">
+    <sequence>
+      <element name="name" type="xsd:string"/>
+      <element name="value" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="ParametersV2">
+    <sequence>
+      <element name="name" type="xsd:string"/>
+      <element name="value" type="xsd:string"/>
+    </sequence>
+  </complexType>
+  <complexType name="GetClientSOFTPHONEInfoBeanV2">
+    <sequence>
+      <element name="businessUnit" minOccurs="0" type="xsd:string"/>
+      <element name="customer" minOccurs="0" type="types:CustomerInfoV2"/>
+      <element name="equipmentList" minOccurs="0" maxOccurs="unbounded" type="types:EquipmentV2"/>
+      <element name="serviceList" minOccurs="0" maxOccurs="unbounded" type="types:ServiceV2"/>
+      <element name="responseContext" type="types:ResponseContextV2"/>
+    </sequence>
+  </complexType>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.170.194.214:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:endpoint>http://10.170.194.215:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:endpoint>http://10.170.194.216:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:endpoint>http://WSA.francetelecom.com/papyrusCustomerCareWS/services/GetSoftPhoneInfos-v2</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="getClientSOFTPHONEInfo" bindingOperationName="getClientSOFTPHONEInfo" type="Request-Response" outputName="getClientSOFTPHONEInfoResponse" inputName="getClientSOFTPHONEInfoRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://WSA.francetelecom.com/papyrusCustomerCareWS/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>?</get:businessUnit>
+         <get:cpeType>?</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>?</get:type>
+            <!--Optional:-->
+            <get:value>?</get:value>
+         </get:customerId>
+         <!--Optional:-->
+         <get:callContext>
+            <!--Optional:-->
+            <get:applicationParameter>?</get:applicationParameter>
+            <!--Optional:-->
+            <get:logLevel>?</get:logLevel>
+            <!--Optional:-->
+            <get:timing>?</get:timing>
+            <!--Optional:-->
+            <get:userName>?</get:userName>
+            <!--Optional:-->
+            <get:userPassword>?</get:userPassword>
+         </get:callContext>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://WSA.francetelecom.com/wsdl/GetSoftPhoneInfos/v2/GetSoftPhoneInfos/getClientSOFTPHONEInfoRequest"/></con:call></con:operation></con:interface><con:testSuite name="GetSoftPhoneInfosSoapBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getClientSOFTPHONEInfo TestCase" searchProperties="true" id="2cb828e1-3577-49e6-aa46-fcfbfcf97881" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="Start Services at port 7031"><con:settings/><con:config><script>import com.orange.linux.SwitchUser;
+	SwitchUser sw = new SwitchUser();
+	def portValue = context.expand('${#TestSuite#Port}');
+	def serverValue = context.expand('${#TestSuite#Server}');
+	def port = Integer.parseInt(portValue);
+	sw.startPort(serverValue,port);</script></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Nominal(Search by NDIP)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Nominal(Search by NDIP)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_TYPE_NDIP}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#NDIP_Nominal}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// headers to be able to use various functions  
+import java.util.*;  
+import java.text.*;
+
+// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+def businessUnit = responseHolder.getNodeValue("//ns1:businessUnit")
+def accountId = responseHolder.getNodeValue("//ns1:accountId")
+def offer = responseHolder.getNodeValue("//ns1:offer")
+def authEmail = responseHolder.getNodeValue("//ns1:authEmail")
+def connectionMode = responseHolder.getNodeValue("//ns1:connectionMode")
+def ipAddress = responseHolder.getNodeValue("//ns1:ipAddress")
+def firstConnectiondate = responseHolder.getNodeValue("//ns1:firstConnectiondate")
+def lastConnectiondate = responseHolder.getNodeValue("//ns1:lastConnectiondate")
+log.info lastConnectiondate
+def deviceBrand = responseHolder.getNodeValue("//ns1:deviceBrand")
+def deviceName = responseHolder.getNodeValue("//ns1:deviceName")
+def os = responseHolder.getNodeValue("//ns1:os")
+def osVersion = responseHolder.getNodeValue("//ns1:osVersion")
+def softwareVersion = responseHolder.getNodeValue("//ns1:softwareVersion")
+def serviceType = responseHolder.getNodeValue("//ns1:serviceList/ns1:type")
+def interfaceName = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:name")
+def interfaceValue = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:value")
+def serviceStatus = responseHolder.getNodeValue("//ns1:serviceList/ns1:serviceStatus")
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+def counter = 0
+
+
+// Assertion of these variables 
+assert businessUnit == context.expand('${#TestSuite#BU_FR}')
+assert accountId == context.expand('${#TestSuite#NDIP_nominal_accountId}')
+assert offer == context.expand('${#TestSuite#NDIP_nominal_offer}')
+assert authEmail == context.expand('${#TestSuite#NDIP_authEmail}')
+assert connectionMode == context.expand('${#TestSuite#NDIP_connectionMode}')
+assert ipAddress == context.expand('${#TestSuite#IPAddress}')
+assert firstConnectiondate == context.expand('${#TestSuite#firstConnectionDate}')
+assert deviceBrand == context.expand('${#TestSuite#deviceBrand}')
+assert deviceName == context.expand('${#TestSuite#deviceName}')
+assert os == context.expand('${#TestSuite#os}')
+assert osVersion == context.expand('${#TestSuite#osVersion}')
+assert softwareVersion == context.expand('${#TestSuite#softwareVersion}')
+assert serviceType == context.expand('${#TestSuite#NDIP_serviceType}')
+assert interfaceName == context.expand('${#TestSuite#NDIP_interfaceName}')
+assert interfaceValue == context.expand('${#TestSuite#NDIP_interfaceValue}')
+assert serviceStatus == context.expand('${#TestSuite#NDIP_serviceStatus}')
+assert returnCode == context.expand('${#TestSuite#RC_OK}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_OK}')
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:name'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name5}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name6}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name7}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name8}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name11}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name12}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name18}') 
+	     break 	
+	}
+	counter++
+}
+counter = 0
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:value'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value5}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value6}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value7}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value8}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value11}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value12}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value18}') 
+	     break 	
+	}
+	counter++
+}
+  // Variable for the parsing of elements with value in date format  
+    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.S'Z'");  
+      
+    // Variables for comparison and current date  
+    Date currentDate = new Date()  
+    Date cmpDate  
+      
+    // Store the parsed date in date type variable used for comparison  
+    cmpDate = date.parse(lastConnectiondate)  
+      
+    // Compare dates till month since second value may change.  
+    log.info "Year : " + cmpDate.getYear() + " == " + currentDate.getYear()  
+    log.info "Month : " + cmpDate.getMonth() + " == " + currentDate.getMonth()  
+    log.info "Date : " + cmpDate.getDate() + " == " + currentDate.getDate()  
+    log.info "Hours : " + cmpDate.getHours() + " == " + currentDate.getHours()  
+    log.info "Minutes : " + cmpDate.getMinutes() + " == " + currentDate.getMinutes()  
+      
+      
+    assert cmpDate.getYear() == currentDate.getYear()  
+    assert cmpDate.getMonth() == currentDate.getMonth()  
+    assert cmpDate.getDate() == currentDate.getDate()  
+      
+    // Assertion to check the element returned has correct date format.  
+    assert cmpDate.getHours() == currentDate.getHours()  
+    assert cmpDate.getMinutes() == currentDate.getMinutes()  
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Nominal(Search by AID)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Nominal(Search by AID)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_nominal}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// headers to be able to use various functions  
+import java.util.*;  
+import java.text.*;
+
+// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+def businessUnit = responseHolder.getNodeValue("//ns1:businessUnit")
+def accountId = responseHolder.getNodeValue("//ns1:accountId")
+//def offer = responseHolder.getNodeValue("//ns1:offer")
+def authEmail = responseHolder.getNodeValue("//ns1:authEmail")
+def connectionMode = responseHolder.getNodeValue("//ns1:connectionMode")
+def ipAddress = responseHolder.getNodeValue("//ns1:ipAddress")
+def firstConnectiondate = responseHolder.getNodeValue("//ns1:firstConnectiondate")
+def lastConnectiondate = responseHolder.getNodeValue("//ns1:lastConnectiondate")
+log.info lastConnectiondate
+def deviceBrand = responseHolder.getNodeValue("//ns1:deviceBrand")
+def deviceName = responseHolder.getNodeValue("//ns1:deviceName")
+def os = responseHolder.getNodeValue("//ns1:os")
+def osVersion = responseHolder.getNodeValue("//ns1:osVersion")
+def softwareVersion = responseHolder.getNodeValue("//ns1:softwareVersion")
+def serviceType = responseHolder.getNodeValue("//ns1:serviceList/ns1:type")
+def interfaceName = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:name")
+def interfaceValue = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:value")
+def serviceStatus = responseHolder.getNodeValue("//ns1:serviceList/ns1:serviceStatus")
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+def counter = 0
+
+
+// Assertion of these variables 
+assert businessUnit == context.expand('${#TestSuite#BU_FR}')
+assert accountId == context.expand('${#TestSuite#AID_nominal}')
+//assert offer == context.expand('${#TestSuite#NDIP_nominal_offer}')
+assert authEmail == context.expand('${#TestSuite#NDIP_authEmail}')
+assert connectionMode == context.expand('${#TestSuite#NDIP_connectionMode}')
+assert ipAddress == context.expand('${#TestSuite#IPAddress}')
+assert firstConnectiondate == context.expand('${#TestSuite#firstConnectionDate}')
+assert deviceBrand == context.expand('${#TestSuite#deviceBrand}')
+assert deviceName == context.expand('${#TestSuite#deviceName}')
+assert os == context.expand('${#TestSuite#AID_nominal_OS}')
+assert osVersion == context.expand('${#TestSuite#osVersion}')
+assert softwareVersion == context.expand('${#TestSuite#AID_nominal_softwareVersion}')
+assert serviceType == context.expand('${#TestSuite#NDIP_serviceType}')
+assert interfaceName == context.expand('${#TestSuite#NDIP_interfaceName}')
+assert interfaceValue == context.expand('${#TestSuite#AID_nominal_InterfaceValue}')
+assert serviceStatus == context.expand('${#TestSuite#NDIP_serviceStatus}')
+assert returnCode == context.expand('${#TestSuite#RC_OK}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_OK}')
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:name'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name5}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name6}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name7}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name8}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name11}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name12}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name18}') 
+	     break 	
+	}
+	counter++
+}
+counter = 0
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:value'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value2}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value2}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value2}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value2}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value3}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#AID_parameter_value3}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value18}') 
+	     break 	
+	}
+	counter++
+}
+  // Variable for the parsing of elements with value in date format  
+    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.S'Z'");  
+      
+    // Variables for comparison and current date  
+    Date currentDate = new Date()  
+    Date cmpDate  
+      
+    // Store the parsed date in date type variable used for comparison  
+    cmpDate = date.parse(lastConnectiondate)  
+      
+    // Compare dates till month since second value may change.  
+    log.info "Year : " + cmpDate.getYear() + " == " + currentDate.getYear()  
+    log.info "Month : " + cmpDate.getMonth() + " == " + currentDate.getMonth()  
+    log.info "Date : " + cmpDate.getDate() + " == " + currentDate.getDate()  
+    log.info "Hours : " + cmpDate.getHours() + " == " + currentDate.getHours()  
+    log.info "Minutes : " + cmpDate.getMinutes() + " == " + currentDate.getMinutes()  
+      
+      
+    assert cmpDate.getYear() == currentDate.getYear()  
+    assert cmpDate.getMonth() == currentDate.getMonth()  
+    assert cmpDate.getDate() == currentDate.getDate()  
+      
+    // Assertion to check the element returned has correct date format.  
+    assert cmpDate.getHours() == currentDate.getHours()  
+    assert cmpDate.getMinutes() == currentDate.getMinutes()  
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Nominal(Search by IMPI)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Nominal(Search by IMPI)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#Nominal_IMPI}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// headers to be able to use various functions  
+import java.util.*;  
+import java.text.*;
+
+// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+def businessUnit = responseHolder.getNodeValue("//ns1:businessUnit")
+def accountId = responseHolder.getNodeValue("//ns1:accountId")
+def offer = responseHolder.getNodeValue("//ns1:offer")
+def authEmail = responseHolder.getNodeValue("//ns1:authEmail")
+def connectionMode = responseHolder.getNodeValue("//ns1:connectionMode")
+def ipAddress = responseHolder.getNodeValue("//ns1:ipAddress")
+def firstConnectiondate = responseHolder.getNodeValue("//ns1:firstConnectiondate")
+def lastConnectiondate = responseHolder.getNodeValue("//ns1:lastConnectiondate")
+log.info lastConnectiondate
+def deviceBrand = responseHolder.getNodeValue("//ns1:deviceBrand")
+def deviceName = responseHolder.getNodeValue("//ns1:deviceName")
+def os = responseHolder.getNodeValue("//ns1:os")
+def osVersion = responseHolder.getNodeValue("//ns1:osVersion")
+def softwareVersion = responseHolder.getNodeValue("//ns1:softwareVersion")
+def serviceType = responseHolder.getNodeValue("//ns1:serviceList/ns1:type")
+def interfaceName = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:name")
+def interfaceValue = responseHolder.getNodeValue("//ns1:serviceList/ns1:interfaceStatusList/ns1:value")
+def serviceStatus = responseHolder.getNodeValue("//ns1:serviceList/ns1:serviceStatus")
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+def counter = 0
+
+
+// Assertion of these variables 
+assert businessUnit == context.expand('${#TestSuite#BU_FR}')
+assert accountId == context.expand('${#TestSuite#IMPI_nominal_accountID}')
+assert offer == context.expand('${#TestSuite#NDIP_nominal_offer}')
+assert authEmail == context.expand('${#TestSuite#NDIP_authEmail}')
+assert connectionMode == context.expand('${#TestSuite#NDIP_connectionMode}')
+assert ipAddress == context.expand('${#TestSuite#IPAddress}')
+assert firstConnectiondate == context.expand('${#TestSuite#firstConnectionDate}')
+assert deviceBrand == context.expand('${#TestSuite#deviceBrand}')
+assert deviceName == context.expand('${#TestSuite#deviceName}')
+assert os == context.expand('${#TestSuite#IMPI_nominal_os}')
+assert osVersion == context.expand('${#TestSuite#osVersion}')
+assert softwareVersion == context.expand('${#TestSuite#IMPI_nominal_softwareVersion}')
+assert serviceType == context.expand('${#TestSuite#NDIP_serviceType}')
+assert interfaceName == context.expand('${#TestSuite#NDIP_interfaceName}')
+assert interfaceValue == context.expand('${#TestSuite#IMPI_nominal_interfaceValue}')
+assert serviceStatus == context.expand('${#TestSuite#NDIP_serviceStatus}')
+assert returnCode == context.expand('${#TestSuite#RC_OK}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_OK}')
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:name'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name5}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name6}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name7}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name8}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name11}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name12}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_name18}') 
+	     break 	
+	}
+	counter++
+}
+counter = 0
+for( node in responseHolder['//ns1:serviceList/ns1:parameterList/ns1:value'] )
+{
+	switch (counter)
+	{
+	   case "0":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value1}')
+	     break
+	   case "1":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value2}') 
+	     break 	
+	   case "2":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value3}')
+	     break
+	   case "3":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value4}') 
+	     break 	
+	   case "4":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value2}')
+	     break
+	   case "5":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value2}') 
+	     break 	
+	   case "6":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value2}')
+	     break
+	   case "7":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value2}') 
+	     break 	
+	   case "8":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value9}')
+	     break
+	   case "9":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value10}') 
+	     break 	
+	   case "10":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value3}')
+	     break
+	   case "11":
+	     assert node==context.expand('${#TestSuite#IMPI_parameter_value3}') 
+	     break 	
+	   case "12":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value13}')
+	     break
+	   case "13":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value14}') 
+	     break 	
+	   case "14":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value15}')
+	     break
+	   case "15":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value16}') 
+	     break 	
+	   case "16":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value17}')
+	     break
+	   case "17":
+	     assert node==context.expand('${#TestSuite#NDIP_parameter_value18}') 
+	     break 	
+	}
+	counter++
+}
+  // Variable for the parsing of elements with value in date format  
+    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.S'Z'");  
+      
+    // Variables for comparison and current date  
+    Date currentDate = new Date()  
+    Date cmpDate  
+      
+    // Store the parsed date in date type variable used for comparison  
+    cmpDate = date.parse(lastConnectiondate)  
+      
+    // Compare dates till month since second value may change.  
+    log.info "Year : " + cmpDate.getYear() + " == " + currentDate.getYear()  
+    log.info "Month : " + cmpDate.getMonth() + " == " + currentDate.getMonth()  
+    log.info "Date : " + cmpDate.getDate() + " == " + currentDate.getDate()  
+    log.info "Hours : " + cmpDate.getHours() + " == " + currentDate.getHours()  
+    log.info "Minutes : " + cmpDate.getMinutes() + " == " + currentDate.getMinutes()  
+      
+      
+    assert cmpDate.getYear() == currentDate.getYear()  
+    assert cmpDate.getMonth() == currentDate.getMonth()  
+    assert cmpDate.getDate() == currentDate.getDate()  
+      
+    // Assertion to check the element returned has correct date format.  
+    assert cmpDate.getHours() == currentDate.getHours()  
+    assert cmpDate.getMinutes() == currentDate.getMinutes()  
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Invalid AID)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Invalid AID)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_TYPE_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_InvalidReturnType}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_InvalidAID}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Invalid NDIP)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Invalid NDIP)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_TYPE_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#NDIP_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_InvalidReturnType}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_InvalidNDIP}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Invalid IMPI)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Invalid IMPI)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_TYPE_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_InvalidReturnType}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_InvalidIMPI}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Invalid BU)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Invalid BU)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_TYPE_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#BU_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_InvalidReturnType}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_InvalidBU}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Invalid CPE)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Invalid CPE)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#CPE_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_InvalidReturnType}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_InvalidCPE}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -200(CustomerNotFound)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -200(CustomerNotFound)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_noCustomer}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_CustomerNotFound}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_CustomerNotFound}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -104(Unknown Error)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -104(Unknown Error)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#Unknown_AID}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_FCPEUnreachable}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_FCPEUnreachable}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Stop services at port"><con:settings/><con:config><script>import com.orange.linux.SwitchUser;
+	SwitchUser sw = new SwitchUser();
+	def portValue = context.expand('${#TestSuite#Port}');
+	def serverValue = context.expand('${#TestSuite#Server}');
+	def port = Integer.parseInt(portValue);
+	sw.stopPort(serverValue,port);</script></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -103(FCPEsoft Unreachable)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -103(FCPEsoft Unreachable)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#Unreachable_AID}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_103}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_unreachable}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Start services at port"><con:settings/><con:config><script>import com.orange.linux.SwitchUser;
+	SwitchUser sw = new SwitchUser();
+	def portValue = context.expand('${#TestSuite#Port}');
+	def serverValue = context.expand('${#TestSuite#Server}');
+	def port = Integer.parseInt(portValue);
+	sw.startPort(serverValue,port);</script></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -100(Invalid AID)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -100(Invalid AID)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_101}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_BadFormat}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_Invalid_AID}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -100(Invalid NDIP)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -100(Invalid NDIP)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_NDIP}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#NDIP_100}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_BadFormat}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_Invalid_NDIP}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -100(Invalid IMPI)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -100(Invalid IMPI)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+          <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_100}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_BadFormat}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_Invalid_IMPI}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Nominal(Search by AID-ServiceStatus 0)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Nominal(Search by AID-ServiceStatus 0)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_ServiceStatus0}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// headers to be able to use various functions  
+import java.util.*;  
+import java.text.*;
+
+// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+def businessUnit = responseHolder.getNodeValue("//ns1:businessUnit")
+def accountId = responseHolder.getNodeValue("//ns1:accountId")
+def offer = responseHolder.getNodeValue("//ns1:offer")
+def authEmail = responseHolder.getNodeValue("//ns1:authEmail")
+def connectionMode = responseHolder.getNodeValue("//ns1:connectionMode")
+def ipAddress = responseHolder.getNodeValue("//ns1:ipAddress")
+def serviceType = responseHolder.getNodeValue("//ns1:serviceList/ns1:type")
+def serviceStatus = responseHolder.getNodeValue("//ns1:serviceList/ns1:serviceStatus")
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+assert businessUnit == context.expand('${#TestSuite#BU_FR}')
+assert accountId == context.expand('${#TestSuite#AID_ServiceStatus0}')
+assert offer == context.expand('${#TestSuite#NDIP_nominal_offer}')
+assert authEmail == context.expand('${#TestSuite#AID_authEmail}')
+assert serviceType == context.expand('${#TestSuite#NDIP_serviceType}')
+assert serviceStatus == context.expand('${#TestSuite#SrviceStatus0}')
+assert returnCode == context.expand('${#TestSuite#RC_OK}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_OK}')
+
+ </scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -102(Missing Parameter IMPI)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -102(Missing Parameter IMPI)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+        <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <!--<get:type>IMPI</get:type>
+-->
+            <!--Optional:-->
+            <!--<get:value>nimisha.gupta@orange-multimedia.fr</get:value>
+-->
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_MissingInput}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_MissingInput}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -102(Missing Parameter AID)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -102(Missing Parameter AID)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <!--<get:type>AID</get:type>
+-->
+            <!--Optional:-->
+            <!--<get:value>1234404091222</get:value>
+-->
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_MissingInput}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_MissingInput}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -102(Missing Parameter NDIP)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -102(Missing Parameter NDIP)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+        <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+             <!--<get:type>NDIP</get:type>
+-->
+            <!--Optional:-->
+            <!--<get:value>1234404091222</get:value>
+-->
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_MissingInput}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_MissingInput}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -102(Missing Parameter BU)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -102(Missing Parameter BU)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit></get:businessUnit>
+          <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_101}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_MissingInput}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_MissingBU}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -102(Missing Parameter CPETYPE)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -102(Missing Parameter CPETYPE)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType></get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#AID_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_MissingInput}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_MissingCPE}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -401(IOSW.REQ.AUTORISATION_FAILURE)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -401(IOSW.REQ.AUTORISATION_FAILURE)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>FR</get:businessUnit>
+         <get:cpeType>SOFTPHONE</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>AID</get:type>
+            <!--Optional:-->
+            <get:value>123440481</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -101(InvalidCutsomer type)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -101(InvalidCutsomer type)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+          <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>HHH</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == "-101"
+assert returnFaultMessage == "Invalid input parameter : customerId.type"</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -101(Invalid BU)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -101(Invalid BU)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+          <get:businessUnit>SP</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == "-101"
+assert returnFaultMessage == "Invalid input parameter : businessUnit"</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -100(BAD Format cpeType)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -100(BAD Format cpeType)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+          <get:businessUnit>FR</get:businessUnit>
+         <get:cpeType>MyDeviceWhichIsSoftPhone!</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == "-100"
+assert returnFaultMessage == "Bad input data format : cpeType"</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -100(BAD Format BU)"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -100(BAD Format BU)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+          <get:businessUnit>89</get:businessUnit>
+         <get:cpeType>softPhone</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_IMPI}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#IMPI_104}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == "-100"
+assert returnFaultMessage == "Bad input data format : businessUnit"</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getClientSOFTPHONEInfo - Error -103(FCPESOFT(-7))"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetSoftPhoneInfosSoapBinding</con:interface><con:operation>getClientSOFTPHONEInfo</con:operation><con:request name="getClientSOFTPHONEInfo - Error -103(FCPESOFT(-7))"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.170.231.171:1080/PapyrusSAV/services/GetSoftPhoneInfos-v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://WSA.francetelecom.com/types/GetSoftPhoneInfos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:getClientSOFTPHONEInfo>
+         <get:businessUnit>${#TestSuite#BU_FR}</get:businessUnit>
+         <get:cpeType>${#TestSuite#CPETYPE}</get:cpeType>
+         <get:customerId>
+            <!--Optional:-->
+            <get:type>${#TestSuite#ID_Type_AID}</get:type>
+            <!--Optional:-->
+            <get:value>${#TestSuite#notreachable_AID}</get:value>
+         </get:customerId>
+      </get:getClientSOFTPHONEInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" name="Script Assertion"><con:configuration><scriptText>// Declaration of Context variables
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+
+responseHolder.namespaces [ "ns1" ] = "http://WSA.francetelecom.com/types/GetSoftPhoneInfos"
+
+// Declaration and assignment of variables
+
+def returnCode = responseHolder.getNodeValue("//ns1:returnCode")
+def returnFaultMessage = responseHolder.getNodeValue("//ns1:returnFaultMessage")
+
+// Assertion of these variables 
+
+assert returnCode == context.expand('${#TestSuite#RC_103}')
+assert returnFaultMessage == context.expand('${#TestSuite#RFM_unreachable}')</scriptText></con:configuration></con:assertion><con:credentials><con:username>papyihm</con:username><con:password>papypapyihm</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>BU_FR</con:name><con:value>FR</con:value></con:property><con:property><con:name>CPETYPE</con:name><con:value>SOFTPHONE</con:value></con:property><con:property><con:name>ID_TYPE_NDIP</con:name><con:value>NDIP</con:value></con:property><con:property><con:name>NDIP_Nominal</con:name><con:value>+33155886791</con:value></con:property><con:property><con:name>NDIP_nominal_accountId</con:name><con:value>123440402</con:value></con:property><con:property><con:name>NDIP_nominal_offer</con:name><con:value>Voipsoftphone</con:value></con:property><con:property><con:name>NDIP_authEmail</con:name><con:value>nimisha.gupta@orange.com</con:value></con:property><con:property><con:name>NDIP_connectionMode</con:name><con:value>NOMINAL</con:value></con:property><con:property><con:name>IPAddress</con:name><con:value>10.239.199.1</con:value></con:property><con:property><con:name>firstConnectionDate</con:name><con:value>2008-06-16T09:56:26.377Z</con:value></con:property><con:property><con:name>deviceBrand</con:name><con:value>Samsung</con:value></con:property><con:property><con:name>deviceName</con:name><con:value>GT-I9000</con:value></con:property><con:property><con:name>os</con:name><con:value>G0R0C1</con:value></con:property><con:property><con:name>osVersion</con:name><con:value>2.3.6</con:value></con:property><con:property><con:name>softwareVersion</con:name><con:value>G0R0C1</con:value></con:property><con:property><con:name>NDIP_serviceType</con:name><con:value>VOIP_SIP</con:value></con:property><con:property><con:name>NDIP_interfaceName</con:name><con:value>VMPAL</con:value></con:property><con:property><con:name>NDIP_interfaceValue</con:name><con:value>2</con:value></con:property><con:property><con:name>NDIP_serviceStatus</con:name><con:value>200</con:value></con:property><con:property><con:name>NDIP_parameter_name1</con:name><con:value>authentication</con:value></con:property><con:property><con:name>NDIP_parameter_name2</con:name><con:value>IMPI</con:value></con:property><con:property><con:name>NDIP_parameter_name3</con:name><con:value>NDIP</con:value></con:property><con:property><con:name>NDIP_parameter_name4</con:name><con:value>URISIP</con:value></con:property><con:property><con:name>NDIP_parameter_name5</con:name><con:value>OutboundProxy</con:value></con:property><con:property><con:name>NDIP_parameter_name6</con:name><con:value>useDefaultOutboundProxyPort</con:value></con:property><con:property><con:name>NDIP_parameter_name7</con:name><con:value>LocalPortNumber</con:value></con:property><con:property><con:name>NDIP_parameter_name8</con:name><con:value>RegistrationDelay</con:value></con:property><con:property><con:name>NDIP_parameter_name9</con:name><con:value>MWIEnable</con:value></con:property><con:property><con:name>NDIP_parameter_name10</con:name><con:value>CallWaitingEnable</con:value></con:property><con:property><con:name>NDIP_parameter_name11</con:name><con:value>International</con:value></con:property><con:property><con:name>NDIP_parameter_name12</con:name><con:value>Mobile</con:value></con:property><con:property><con:name>NDIP_parameter_name13</con:name><con:value>Premium</con:value></con:property><con:property><con:name>NDIP_parameter_name14</con:name><con:value>UserAgentDomain</con:value></con:property><con:property><con:name>NDIP_parameter_name15</con:name><con:value>VoiceMailBoxDomain</con:value></con:property><con:property><con:name>NDIP_parameter_name16</con:name><con:value>UserName</con:value></con:property><con:property><con:name>NDIP_parameter_name17</con:name><con:value>UserFirstName</con:value></con:property><con:property><con:name>NDIP_parameter_name18</con:name><con:value>SiPUserAgent</con:value></con:property><con:property><con:name>RC_OK</con:name><con:value>1</con:value></con:property><con:property><con:name>RFM_OK</con:name><con:value>RESULT OK</con:value></con:property><con:property><con:name>NDIP_parameter_value1</con:name><con:value>*****</con:value></con:property><con:property><con:name>NDIP_parameter_value2</con:name><con:value>FTI/123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value3</con:name><con:value>+33123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value4</con:name><con:value>SIP:+33123440402@orange.com</con:value></con:property><con:property><con:name>NDIP_parameter_value5</con:name><con:value>FTI/123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value6</con:name><con:value>FTI/123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value7</con:name><con:value>FTI/123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value8</con:name><con:value>FTI/123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value9</con:name><con:value>FALSE</con:value></con:property><con:property><con:name>NDIP_parameter_value10</con:name><con:value>FALSE</con:value></con:property><con:property><con:name>NDIP_parameter_value11</con:name><con:value>+33123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value12</con:name><con:value>+33123440402</con:value></con:property><con:property><con:name>NDIP_parameter_value13</con:name><con:value>TRUE</con:value></con:property><con:property><con:name>NDIP_parameter_value14</con:name><con:value>ad.francetelecom.fr</con:value></con:property><con:property><con:name>NDIP_parameter_value15</con:name><con:value>ad.francetelecom.fr</con:value></con:property><con:property><con:name>NDIP_parameter_value16</con:name><con:value>Nimisha Gupta</con:value></con:property><con:property><con:name>NDIP_parameter_value17</con:name><con:value>Nimisha</con:value></con:property><con:property><con:name>NDIP_parameter_value18</con:name><con:value>OrangeSoftVersion-055-L01-A40</con:value></con:property><con:property><con:name>AID_nominal</con:name><con:value>123440401</con:value></con:property><con:property><con:name>AID_nominal_OS</con:name><con:value>G0R0C0</con:value></con:property><con:property><con:name>AID_nominal_softwareVersion</con:name><con:value>G0R0C0</con:value></con:property><con:property><con:name>AID_nominal_InterfaceValue</con:name><con:value>1</con:value></con:property><con:property><con:name>AID_parameter_value2</con:name><con:value>FTI/123440401</con:value></con:property><con:property><con:name>AID_parameter_value3</con:name><con:value>+33123440401</con:value></con:property><con:property><con:name>AID_parameter_value4</con:name><con:value>SIP:+33123440401@orange.com</con:value></con:property><con:property><con:name>IMPI_nominal_accountID</con:name><con:value>123440403</con:value></con:property><con:property><con:name>IMPI_nominal_os</con:name><con:value>G0R0C2</con:value></con:property><con:property><con:name>IMPI_nominal_softwareVersion</con:name><con:value>G0R0C2</con:value></con:property><con:property><con:name>IMPI_nominal_interfaceValue</con:name><con:value>3</con:value></con:property><con:property><con:name>IMPI_parameter_value2</con:name><con:value>FTI/123440403</con:value></con:property><con:property><con:name>IMPI_parameter_value3</con:name><con:value>+33123440403</con:value></con:property><con:property><con:name>IMPI_parameter_value4</con:name><con:value>SIP:+33123440403@orange.com</con:value></con:property><con:property><con:name>RC_InvalidReturnType</con:name><con:value>-104</con:value></con:property><con:property><con:name>RFM_InvalidAID</con:name><con:value>Undefined FCPESoft error : Invalid AID</con:value></con:property><con:property><con:name>RFM_InvalidNDIP</con:name><con:value>Undefined FCPESoft error : Invalid NDIP</con:value></con:property><con:property><con:name>RFM_InvalidIMPI</con:name><con:value>Undefined FCPESoft error : Invalid IMPI</con:value></con:property><con:property><con:name>RFM_InvalidBU</con:name><con:value>Undefined FCPESoft error : Invalid business unit</con:value></con:property><con:property><con:name>RFM_InvalidCPE</con:name><con:value>Undefined FCPESoft error : Invalid CPEType</con:value></con:property><con:property><con:name>RC_CustomerNotFound</con:name><con:value>-200</con:value></con:property><con:property><con:name>RFM_CustomerNotFound</con:name><con:value>requested customer does not exist</con:value></con:property><con:property><con:name>RC_FCPEUnreachable</con:name><con:value>-104</con:value></con:property><con:property><con:name>RFM_FCPEUnreachable</con:name><con:value>Undefined FCPESoft error : Unknown error</con:value></con:property><con:property><con:name>RC_InvalidIdType</con:name><con:value>-101</con:value></con:property><con:property><con:name>RFM_Invalid_AID</con:name><con:value>Bad input data format : customerId (type:AID)</con:value></con:property><con:property><con:name>RFM_Invalid_NDIP</con:name><con:value>Bad input data format : customerId (type:NDIP)</con:value></con:property><con:property><con:name>RFM_Invalid_IMPI</con:name><con:value>Bad input data format : customerId (type:IMPI)</con:value></con:property><con:property><con:name>AID_ServiceStatus0</con:name><con:value>123440480</con:value></con:property><con:property><con:name>AID_authEmail</con:name><con:value>nimisha.gupta1@orange.com</con:value></con:property><con:property><con:name>SrviceStatus0</con:name><con:value>0</con:value></con:property><con:property><con:name>RC_MissingInput</con:name><con:value>-102</con:value></con:property><con:property><con:name>RFM_MissingInput</con:name><con:value>Missing input parameter :  customerId</con:value></con:property><con:property><con:name>RFM_MissingBU</con:name><con:value>Missing input parameter :  businessUnit</con:value></con:property><con:property><con:name>RFM_MissingCPE</con:name><con:value>Missing input parameter :  cpeType</con:value></con:property><con:property><con:name>ID_Type_AID</con:name><con:value>AID</con:value></con:property><con:property><con:name>ID_Type_IMPI</con:name><con:value>IMPI</con:value></con:property><con:property><con:name>Nominal_IMPI</con:name><con:value>a1243f@orange-multimedia.fr</con:value></con:property><con:property><con:name>AID_104</con:name><con:value>123440404</con:value></con:property><con:property><con:name>NDIP_104</con:name><con:value>123440405</con:value></con:property><con:property><con:name>IMPI_104</con:name><con:value>123440406</con:value></con:property><con:property><con:name>BU_104</con:name><con:value>123440407</con:value></con:property><con:property><con:name>CPE_104</con:name><con:value>123440408</con:value></con:property><con:property><con:name>AID_noCustomer</con:name><con:value>123440499</con:value></con:property><con:property><con:name>Unknown_AID</con:name><con:value>123440409</con:value></con:property><con:property><con:name>Unreachable_AID</con:name><con:value>123440409</con:value></con:property><con:property><con:name>AID_101</con:name><con:value>1234404091222</con:value></con:property><con:property><con:name>NDIP_101</con:name><con:value>1234404091222</con:value></con:property><con:property><con:name>IMPI_101</con:name><con:value>nimisha.gupta@orange-multimedia.fr</con:value></con:property><con:property><con:name>RC_BadFormat</con:name><con:value>-100</con:value></con:property><con:property><con:name>RC_103</con:name><con:value>-103</con:value></con:property><con:property><con:name>RFM_unreachable</con:name><con:value>FCPESoft unreachable</con:value></con:property><con:property><con:name>notreachable_AID</con:name><con:value>123440482</con:value></con:property><con:property><con:name>NDIP_100</con:name><con:value>18888888888888888888888888888</con:value></con:property><con:property><con:name>IMPI_100</con:name><con:value>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</con:value></con:property><con:property><con:name>Port</con:name><con:value>7031</con:value></con:property><con:property><con:name>Server</con:name><con:value>10.170.231.171</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
